@@ -1,6 +1,6 @@
 <template>
     <el-menu
-      default-active="2"
+      default-active="1"
       class="el-menu-vertical-demo"
       @open="handleOpen"
       @close="handleClose"
@@ -21,27 +21,25 @@
           <el-menu-item index="1-2">教辅</el-menu-item>
           </router-link>
         </el-menu-item-group>
-        <el-menu-item-group title="生活类书籍">
-          <router-link :to="'/tour'">
-          <el-menu-item index="1-3">旅游</el-menu-item>
-          </router-link>
-          <router-link :to="'/food'">
-          <el-menu-item index="1-4">美食</el-menu-item>
-          </router-link>
-        </el-menu-item-group>
       </el-submenu>
+      <router-link :to="'/food'">
       <el-menu-item index="2">
         <i class="el-icon-menu"></i>
         <span slot="title">饮食</span>
       </el-menu-item>
+      </router-link>
+      <router-link :to="'/style'">
       <el-menu-item index="3">
         <i class="el-icon-document"></i>
         <span slot="title">穿着</span>
       </el-menu-item>
+      </router-link>
+      <router-link :to="'/life'">
       <el-menu-item index="4">
         <i class="el-icon-setting"></i>
         <span slot="title">生活</span>
       </el-menu-item>
+      </router-link>
     </el-menu>
 </template>
 

@@ -1,7 +1,8 @@
 <template>
-  <p>饮食</p>
+  <p>生活</p>
 </template>
 
 <style>
 
 </style>
+
